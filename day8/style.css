@@ -1,0 +1,10 @@
+html, body{
+    background-color:rgb(255, 255, 255);
+    font-family: Lucida ;
+    color: #1b1b1b;
+}
+
+img{
+    max-width: 100%;
+    max-height: 300px;
+}

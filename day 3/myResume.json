@@ -1,0 +1,62 @@
+{
+    "Name":"Sathish kumar",
+    "Address":"7th street, Duraisamypuram, Sayalgudi, Ramanathapuram - 623120, Tamil Nadu, India",
+    "DOB":"27/09/1999",
+    "EMail":"sathisheee927@gmail.com",
+    "photoURL":"<a href='https://sathishkumarsk.web.app/static/media/my.2af1d4b8.jpg'>My Photo</a>",
+    "Education":{
+        "UG": {
+            "Degree":"Bachelor of Engineering",
+            "Place" : "SSN college of Engineering, Chennai",
+            "Duration":"2018-2021",
+            "course":"Electrical and Electronics Engineering",
+            "Score":"7.4"
+        },
+        "Diploma":{
+            "Degree":"Diploma In Engineering",
+            "place":"VSVN Polytechnic College",
+            "Duration":"2016-2018",
+            "course":"Electrical and Electronics Engineering",
+            "Score":"84.14%"
+        },
+        "HSC":{
+            "Degree":"HSC",
+            "place":"Kshatriya Nadar Matriculation and Higher Secondary School, Kamuthi",
+            "Duration":"2015-2016",
+            "course":"Higher Secondary",
+            "Score":"68%"
+        },
+        "SSLC":{
+            "Degree":"SSLC",
+            "place":"Kshatriya Nadar Matriculation and Higher Secondary School, Kamuthi",
+            "Duration":"2013-2014",
+            "course":"Secondary School",
+            "Score":"88%"
+        }
+    },
+    "Certifications":[
+        "Completed a certification course on DIPLOMA IN COMPUTER APPLCATION. (2016)", 
+        "Completed a certification course on ARDUINO. (2017)", 
+        "Completed a certification course on Basics of Solar Engineering (2017)",
+         "Completed certification course on CCTV surveillance system. (2018)"
+    ],
+    "Knowledges":[
+        "Web Devlopement",
+        "PHP",
+        "HTML",
+        "JavaScript",
+        "CSS",
+        "Firebase"
+    ],
+    "Experience": "Fresher",
+    "Languages" : [
+        "Tamil",
+        "English"
+    ],
+    "Projects" : [
+        "Proximity Warning System for Mining Vehicles (2019 - 2020)",
+        "Bio-control based identification and analysis of COPD (2019 - 2020)",
+        "Condition Monitoring of BLDC Motor drive (2020 - Present)"
+    ]
+
+}
