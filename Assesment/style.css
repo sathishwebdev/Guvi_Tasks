@@ -1,0 +1,12 @@
+h1{
+    text-align:center
+}
+
+.code {
+    padding: 5px;
+    margin: 2%;
+    border: 1px solid gray;
+    background-color:aliceblue;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
