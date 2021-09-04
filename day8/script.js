@@ -103,9 +103,19 @@ redCircle.setRadius(3.0)
 console.log(redCircle.toString())
 
 
+// 3) class person to hold details
 
+class Person{
+    constructor(props=[]){
+  return props
+    }
+}
 
+var me = new Person()
+me.name = "Sathish"
+me.age = "21"
 
+console.log(me);
 
 // // Movie datas
 

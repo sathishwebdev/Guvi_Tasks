@@ -1,7 +1,5 @@
-
-    var xhr = new XMLHttpRequest();
-
-xhr.open("GET", "/myResume.json");
+var xhr = new XMLHttpRequest();
+xhr.open("GET", "myResume.json",true);
 
 xhr.onload = function(){
     var a = JSON.parse(this.response);
