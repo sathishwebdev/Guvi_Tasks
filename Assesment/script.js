@@ -1,8 +1,10 @@
+
 //Assessment on 4th sept 2021 by GUVI 
 // in GUVI bootcamp
 
 // 1) get count of rotation between two arrays - level  : easy
-let sampleInputForRotationCount = [4, [4,3,2,5], [2,5,4,3]] // expected output is 1
+
+let sampleInputForRotationCount = [4, [4,3,2,5], [3,2,5,4]] // expected output is 1
 const getCountOfRotaion = (array1, array2, length) =>{ 
     let count = 0
      while(JSON.stringify(array1)!=JSON.stringify(array2)){
@@ -28,7 +30,7 @@ const getCountOfRotaion = (array1, array2, length) =>{
 }
 
 
-console.log(getCountOfRotaion(sampleInputForRotationCount[1], sampleInputForRotationCount[2], sampleInputForRotationCount[0]));
+console.log(`Count of rotation : ${getCountOfRotaion(sampleInputForRotationCount[1], sampleInputForRotationCount[2], sampleInputForRotationCount[0])}`);
 
 // assesment quest 2 -- level : medium
 //  get the String as S - T is the value if 1 - to uppercase if 2 - to lowercase - P is the integer which is denotes that mutliple of P value only make changes in String S 
@@ -62,7 +64,8 @@ if(T === 2 ){
 return ans.join("") // returning the answer
 }
 
-console.log(caseChanger(S,P,T));
+console.log(`case Changing : input = [${S},${P},${T}] - Ouput: ${caseChanger(S,P,T)}`);
+
 
 
 // question 3 - level : hard
@@ -73,7 +76,7 @@ let sampleInput = [[5, 3], [1,1,1,1,1], [1,3],[2,4], [3,4]] //sampleInput expect
 
 // function to sum the values of array from U index to V index
 const sum = ([[N,Q], array, ...sumData]) =>{
-    console.log(N, Q, array, sumData);
+    console.log(`inputs : [${N}, ${Q}], [${array}], [${sumData[0]}], [${sumData[1]}], [${sumData[2]}]`);
    
 // sub function to do sum process
 function subSum (val) {let ans = 0;
@@ -83,7 +86,7 @@ function subSum (val) {let ans = 0;
 }
 // loop for run Q times with values of Q arrays which has U and V value
 for(let j = 0; j < Q; j++){ 
-    console.log(subSum(sumData[j])); 
+    console.log(`inputs(U,V) : ${sumData[j]} Ans : ${subSum(sumData[j])}`); 
 } 
    
 }
