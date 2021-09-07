@@ -6,6 +6,7 @@
 
 let sampleInputForRotationCount = [4, [4,3,2,5], [3,2,5,4]] // expected output is 1
 const getCountOfRotaion = (array1, array2, length) =>{ 
+    if(length<=100000){
     let count = 0
      while(JSON.stringify(array1)!=JSON.stringify(array2)){
         
@@ -25,8 +26,12 @@ const getCountOfRotaion = (array1, array2, length) =>{
         
         count++
     }
+
     // returning the count value
    return count
+}else{
+    return `N value should be <= 100000`
+}
 }
 
 
