@@ -1,0 +1,16 @@
+html{
+    font-family:fantasy;
+    background-color: rgb(129, 129, 129);
+}
+a{
+    color: #242424;
+    text-decoration:none;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+a:hover{
+    
+    font-size: larger;
+    position: absolute;
+    margin-top: -30px;
+    text-shadow: rgb(54, 54, 54) 5px 5px 5px;
+}
