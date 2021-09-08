@@ -1,0 +1,71 @@
+<!DOCTYPE html> <!--represent document type-->
+<html lang="en">
+<head> <!--head tag has meta information which has information of page additionally-->
+    <meta charset="UTF-8"> <!--char set is universal text format UTF globally -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>HTML | GUVI Class - 1</title>
+    <style>
+         th, td{
+            border: 1px solid;
+            align-items:center;
+            text-align: center;
+        }
+        table{
+            align-items: center;
+            border: 2px black solid;
+            background-color: rgb(243, 207, 6);
+            color: rgb(22, 22, 22);
+            border-collapse: collapse; 
+        }
+        td{
+            color: rgb(54, 54, 54);
+        }
+    </style>
+</head>
+<body>
+    <h1>Table</h1>
+    <table> <!--merging 2 cells by using colspan-->
+        <thead>
+           <tr> 
+               <th>State of health</th>
+               <th colspan="2">Fasting value</th>
+                 <th>After Remaining</th>
+              <!--  <th>Email</th> -->
+            </tr>
+            <tr>
+                <th> </th>
+                <th>Minimum</th>
+                <th>Normal</th>
+                <th>2 hr of Eating</th>
+                </th>
+            </tr>
+        </thead>          
+        <tbody>
+            <tr>
+                <td>healthy</td>
+                <td>70</td>
+                <td>100</td>
+                <td>Less than 140</td>
+            </tr>
+            <tr>
+                <td>Pre-Diabetes</td>
+                <td>101</td>
+                <td>126</td>
+                <td>140-200</td>
+            </tr>
+            <tr>
+                <td>Diabetes</td>
+                <td>more than 126</td>
+                <td>Not Applicable</td>
+                <td>More than 200</td>
+            </tr>
+        </tbody>  
+    </table>
+    <br/><hr/>
+
+    <h1>Anchor tag </h1>
+    <a href="https://www.voofacts.com" target="_blank"><h2>Voofacts</h2></a> <!--target is an attribute which helps to redirect the page with blank page i.e opening in new page while a tag is using to redirect-->
+</body>
+</html>
