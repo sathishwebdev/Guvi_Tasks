@@ -41,7 +41,7 @@ console.log(`Count of rotation : ${getCountOfRotaion(sampleInputForRotationCount
 //  get the String as S - T is the value if 1 - to uppercase if 2 - to lowercase - P is the integer which is denotes that mutliple of P value only make changes in String S 
 
 // sample inputs
-let  [S, P, T] = ["proFile", 1, 2] // [S, P, T] -- // expected output is profile
+let  [S, P, T] = ["profile", 2, 1] // [S, P, T] -- // expected output is profile
 
 // create the function to change the case of char at given creteria 
 const caseChanger = (S, P, T) => {
