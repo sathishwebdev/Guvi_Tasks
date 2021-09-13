@@ -1,0 +1,19 @@
+.bg-bang {
+    background-color: green;
+    padding : 20px;
+    max-height: 200px;
+    min-height: 100px;
+    width : auto;
+    justify-content: center;
+    align-items : center;
+
+}
+
+.bang{
+    border-radius: 50%;
+    background-color: red;
+    margin : auto;
+    height: 100px;
+    width: 100px;
+    
+}
