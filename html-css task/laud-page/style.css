@@ -1,0 +1,23 @@
+.header{
+height: 50vh;
+width: 100%; 
+justify-content: center;
+align-items: center;
+display: flex;
+flex-direction: column;
+text-transform: uppercase;
+}
+nav{
+  /* box-shadow: rgb(37, 37, 37) 2px 1px 10px; */
+   border-radius: 10px;
+   background-color: #2f2f2f;
+}
+header{
+    background-color: #2f2f2f;
+    color: #b9b8b8
+}
+img{
+    border-radius: 10px;
+    /* height: auto; */
+    max-height: 500px;
+}
