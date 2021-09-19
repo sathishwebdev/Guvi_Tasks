@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css | Day 3 in HTML</title>
+     <link rel="stylesheet" href="style.css" /> <!--external css implementaion - link tag link the file with attribute rel - relation and href - hyperreference  relation as stylesheet and href as loction of the css file-->
+
+     <style>
+         #div2{
+            height: 100vh; 
+            background-color: #ffc822; 
+            color: black; 
+            justify-content: center; 
+            align-items: center; 
+            display: flex; 
+            flex-direction: column;
+         }
+         a{
+    color: #ffc822;
+    text-decoration:none;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;}
+    a:hover{
+    font-size: 42px; ;
+    position: absolute;
+    margin-top: -30px;
+    text-shadow: rgb(54, 54, 54) 5px 5px 5px;
+}
+     </style>
+</head>
+<body>
+    <div class="container"  > <a href="#div2" >go to next</a> </div> <!-- helps to paint the css properties-->
+    <div id="div2" style="width: 100%; margin: 0;">This is in line style</div>
+</body>
+</html>
