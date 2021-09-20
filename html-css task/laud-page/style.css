@@ -92,3 +92,6 @@ font-size: small;
 .foot-card a:hover{
     color:#e4e4e4
 }
+body{
+    overflow-x: hidden;
+}
