@@ -1,0 +1,23 @@
+{
+  "name": "guvi_task_oops",
+  "version": "1.0.0",
+  "description": "guvi tasks",
+  "main": "index.html",
+  "scripts": {
+    "test": "test GT"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sathishwebdev/Guvi_Tasks.git"
+  },
+  "author": "sathish web DEv",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sathishwebdev/Guvi_Tasks/issues"
+  },
+  "homepage": "https://github.com/sathishwebdev/Guvi_Tasks#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.1",
+    "font-awesome": "^4.7.0"
+  }
+}
