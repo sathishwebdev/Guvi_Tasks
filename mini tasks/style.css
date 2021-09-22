@@ -9,11 +9,14 @@
     color: rgb(43, 43, 43);
 }
 
-html, body{
+html{
     margin: 0;
     overflow-x: hidden;
+    scrollbar-width: 1px;
 }
-
+body{
+    margin: 0px
+}
 
 .jumbo{
     padding: 2%;
@@ -82,7 +85,7 @@ footer h6{
 margin: 5%;
 padding: 3%;
 border-left: #b9b8b8 1px solid;
-height: 10vh;
+min-height: 10vh;
 }
 
 .foot-card p{
@@ -98,3 +101,24 @@ font-size: small;
 nav{
     background-color:rgb(43, 42, 42);
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: wheat;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

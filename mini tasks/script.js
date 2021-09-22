@@ -178,3 +178,11 @@ workspace9.addEventListener('mouseleave', ()=>{
 workspace9.addEventListener('mouseout', ()=>{
     workspace9.contentEditable = false
 })
+
+//nav 
+// const navItem = document.querySelectorAll('.nav-link')
+// const toggleMenu = document.getElementById('navbarSupportedContent')
+// const collapse = new bootstrap.Collapse(toggleMenu)
+// navItem.forEach((l) => {
+//     l.addEventListener('click', () => { collapse.toggle() })
+// })

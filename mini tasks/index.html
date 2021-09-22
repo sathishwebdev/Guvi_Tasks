@@ -14,15 +14,15 @@
 </head>
 <body>
     <!--nav-->
-    
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+   
+    <nav class="navbar sticky-top navbar-expand navbar-dark" >
         <a class="navbar-brand" href="#">Mini-Tasks <span style="font-size: small; color: rgb(117, 116, 116)">by GUVI</span></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="btn navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul id="navList" class="navbar-nav mr-auto">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="overflow: auto;">
+          <ul id="navList" class="d-flex navbar-nav mr-auto" >
             <li class="nav-item ">
               <a class="nav-link" style="font-size: 30px;" href="#ans1">☝️</a>
             </li>
@@ -54,7 +54,7 @@
          
         </div>
       </nav>
-    
+  
     <!--question 1-->
 <div id="ans1" class="answer-box">
    <div class="jumbo">
@@ -103,7 +103,7 @@
         <h3>Q4. Write a Javascript code for character counts in the <code>textarea</code>.</h3>
         <div class="anSpace text-center" >
             <p>Textarea to enter the content which has to be count</p>
-            <textarea id="workspace4" rows="10" cols="100%" >Characters in this field will be count.</textarea>
+            <textarea id="workspace4" rows="10" style=" width:100%" >Characters in this field will be count.</textarea>
         </div>
         <div class="anSpace">
           <p> No. of characters <span id="ans_4" ></span></p>
