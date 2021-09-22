@@ -50,7 +50,7 @@ code{
     /* background-color: grey; */
     padding: 2px;
     /* border-radius: 3px; */
-    color: rgb(39, 39, 39);
+    color: rgb(109, 109, 109);
 }
  
 table,thead, tbody, tr, th, td{
@@ -67,4 +67,34 @@ tr:nth-child(odd){
 input{
     width: 100%;
     margin: 1%;
+}
+footer{
+    background-color: rgb(43, 42, 42);
+    width: 100%;
+    color: #b9b8b8;
+    padding: 10px;
+
+}
+footer h6{
+    color: white;
+}
+.foot-card{
+margin: 5%;
+padding: 3%;
+border-left: #b9b8b8 1px solid;
+height: 10vh;
+}
+
+.foot-card p{
+font-size: small;
+}
+
+.foot-card a{
+    color:#585858 ;
+}
+.foot-card a:hover{
+    color:#e4e4e4
+}
+nav{
+    background-color:rgb(43, 42, 42);
 }
