@@ -154,7 +154,7 @@ function exitFullScreen(){
 
 //answer 8
 function openKeys() {
-    window.open("http://127.0.0.1:5500/mini%20tasks/keys.html", "", "width=800,height=400,top=250,left=500");
+    window.open("https://sathishwebdev.github.io/Guvi_Tasks/mini%20tasks/keys.html", "", "width=800,height=400,top=250,left=500");
     }
 
 
