@@ -1,0 +1,70 @@
+.answer-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: wheat;
+    color: rgb(43, 43, 43);
+}
+
+html, body{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+
+.jumbo{
+    padding: 2%;
+    margin: 1%;
+    max-width: 999px;
+}
+
+#workspace1{
+    background-color: rgb(43, 42, 42);
+    color: rgb(228, 227, 227);
+    padding: 2%;
+    margin: 1%;
+    border-radius: 4px;
+}
+
+.anSpace{
+    background-color: rgb(43, 42, 42);
+    color: rgb(228, 227, 227);
+    padding: 2%;
+    margin: 1%;
+    border-radius: 4px;
+    align-items: center;
+}
+textarea:focus, .btn:focus, input:focus{
+    outline: none;
+    box-shadow: none;
+}
+#ans_3, #ans_4{
+    color: rgb(247, 51, 142);
+}
+     
+code{
+    font-family:'Courier New', Courier, monospace ;
+    /* background-color: grey; */
+    padding: 2px;
+    /* border-radius: 3px; */
+    color: rgb(39, 39, 39);
+}
+ 
+table,thead, tbody, tr, th, td{
+    border: none;
+}
+tr{
+    background-color:rgb(99, 99, 99);
+    color:rgb(228, 227, 227)
+}
+tr:nth-child(odd){
+    background-color:aliceblue;
+    color:rgb(43, 42, 42)
+}
+input{
+    width: 100%;
+    margin: 1%;
+}
