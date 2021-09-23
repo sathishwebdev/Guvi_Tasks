@@ -1,0 +1,11 @@
+{
+  "name": "guvi-task-sk",
+  "description": "templete for guvi tasks",
+  "main": "index.html",
+  "scripts": {
+    "test": "guvi-task-sk"
+  },
+  "author": "sathish kumar s",
+  "license": "ISC",
+  "keywords": []
+}
