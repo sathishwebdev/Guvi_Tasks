@@ -27,7 +27,7 @@ fetch('https://www.googleapis.com/blogger/v3/blogs/8783291873491079674/posts?key
 </div>`
     for(let i = 1 ; i < 3; i++){
         console.log(items[i].title)
-        cl
+        
         
    featured += `<div class="carousel-item  "> <div  class ="row  align-items-center">
    <div class ="col-6 d-none d-lg-block ">
