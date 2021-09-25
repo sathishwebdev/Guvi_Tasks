@@ -15,8 +15,10 @@ paraGen('shortPara', para2)
 paraGen('para', para3)
 paraGen('oneLine', topLine)
 paraGen('headLine', "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque vulputate mauris, eu " )
+
 function paraGen (cName, para){
 for(let i in document.getElementsByClassName(cName)){
     document.getElementsByClassName(cName)[i].innerHTML= `<p>${para}</p>`
 }
 }
+
