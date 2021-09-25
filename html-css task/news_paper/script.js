@@ -15,6 +15,6 @@ paraGen('shortPara', para2)
 paraGen('para', para3)
 function paraGen (cName, para){
 for(let i in document.getElementsByClassName(cName)){
-    document.getElementsByClassName(cName)[i].innerHTML= para
+    document.getElementsByClassName(cName)[i].innerHTML= `<p>${para}</p>`
 }
 }

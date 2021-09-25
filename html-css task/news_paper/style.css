@@ -137,6 +137,8 @@ nav{
 background-color: #555;
 width: 100%;
 /* height: 40vh; */
+border-radius: 10px;
+margin-left: 2%;
 }
 .line{
     width: 100%;
@@ -164,4 +166,34 @@ width: 100%;
 .pad{
     padding: 1%;
     margin: 1%;
+}
+.topLine{
+    
+   display: flex;
+    max-height: 25px;
+    overflow-x: scroll;
+    white-space: nowrap;
+  
+    
+}
+
+.short-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+    width: 100%;
+    background-color: wheat;
+    color: rgb(43, 43, 43);
+    margin: 2%;
+    padding: 2%;
+    text-align: center;
+}
+
+.longPara, .shortPara, .para{
+    column-count : 2  ;
+    /* max-height: 50vh ; */
+    column-width: 150px;
+    text-align: justify;
 }
