@@ -15,17 +15,20 @@
 <body>
   <div class=" pad " id="ans5">
     <h1 style="text-align: center;">DOM - Form Handling </h1>
-    <div class="row justify-content-center ">
+    <div class="row justify-content-center text-center">
         
         <!-- form  -->
-        <div class="anSpace col-12 col-md-4 col-xxl-2 text-center">
+        <div class="anSpace col-12 col-md-4 col-xxl-2 ">
           
-       <form onsubmit="return !!(updateTable() & af())">
+       <form id="form" onsubmit="return !!(updateTable() & af())" >
         <!-- name  -->
-        <input type="text"  name="firstName"  id="firstName" autocomplete = "off" required placeholder="First Name">
-        <input type="text" name="lastName" id="lastName" autocomplete = "off" required placeholder="Last Name" >
+        <div class="line"><span><h5>Your Name </h5></span>  </div>
+        <input type="text"  name="firstName"  id="firstName"  required placeholder="First Name">
+        <input type="text" name="lastName" id="lastName"  required placeholder="Last Name" >
        <!-- gender  -->
+       <div class="line"><span><h5>Select Gender</h5></span>  </div>
         <div class="d-flex">
+          
         <div class="form-check">
         <input type="radio" class="form-check-input" name="gender" id="genderM" value="Male">
        <label class="form-check-label"  for="genderM" class="input-radio-label"> Male </label> 
@@ -39,21 +42,70 @@
         <label class="form-check-label"  for="genderO" class="input-radio-label"> Other </label>
       </div> 
     </div>
+    <!-- food  -->
+    <div class="line"><span><h5>Select Foods </h5></span>  </div>
+    <span class="alert-danger " id="food-alert"  > !! You must select minimum two foods !!</span>
+    <div class=" row align-items-center justify-content-center">
+    <div class="container col-4 text-left ">
+    <div class="form-check">
+    <input class="form-check-input" type="checkbox" name="foods" id="food-1" value="Dosa" /> 
+    <label class="form-check-label" for="food-1" >Dosa</label>
+  </div>
+
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" name="foods" id="food-2" value="Idly" /> 
+    <label class="form-check-label" for="food-2" >Idly</label>
+  </div>
+
+  <div class="form-check">
+    <input class="form-check-input"  type="checkbox" name="foods" id="food-3" value="Poori" /> 
+    <label class="form-check-label" for="food-3" >Poori</label>
+  </div>
+
+  <div class="form-check">
+    <input class="form-check-input"  type="checkbox" name="foods" id="food-4" value="Chapathi" /> 
+    <label class="form-check-label" for="food-4" >Chapathi</label>
+  </div>
+
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" name="foods" id="food-5" value="Briyani" /> 
+    <label class="form-check-label" for="food-5" >Briyani</label>
+  </div>
+</div>
+</div>
     <!-- address  -->
+    <div class="line"><span><h5>Enter Your Address</h5></span>  </div>
         <textarea type="text" rows="4" style="height:auto" name="Address" id="address" autocomplete = "off" required placeholder="Address" ></textarea>
 
-    <!-- state -->
+    <!-- state & country-->
+    <div class="line"><span><h5>Country</h5></span>  </div>
+
+    <select id="country" name="country">
     
+      <option value="--">--select--</option>
+    
+    </select>
 
+    <div class="line"><span><h5>state</h5></span>  </div>
 
+<select id="state" name="state">
+
+  <option value="--">--select--</option>
+
+</select>
+
+<!-- pincode  -->
+<div class="line"><span><h5>Pincode </h5></span>  </div>
+<input type="text"  name="pincode"  id="pincode" maxlength="10" pattern="[0-9]*"  required placeholder="Pincode">
 
         <!-- submit  -->
-    <input  type="submit" style="width: auto;"class="btn btn-dark" value="Submit" >
+    <input  type="submit" style="width: auto;"class="btn btn-dark " value="Submit" >
     </form> 
         </div>
 
         <!-- temp DB  -->
-        <div id="tDb" class="col-12 col-md-6 anSpace">
+
+        <div id="tDb" class="col-12 col-md-7 anSpace">
             <h3>Temporary Database </h3>
           <table class="table">
             <thead class="thead-dark">

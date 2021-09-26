@@ -45,14 +45,19 @@ body{
     height: 90vh;
     overflow: auto;
 }
-textarea:focus, .btn:focus, input:focus{
+textarea:focus, .btn:focus, input:focus, select:focus{
     outline: none;
     box-shadow: none;
 }
 #ans_3, #ans_4{
     color: rgb(247, 51, 142);
 }
-     
+.alert-danger{
+    padding: 1%;
+    margin: 1%;
+    border-radius: 5px;
+    display: none;
+}
 code{
     font-family:'Courier New', Courier, monospace ;
     /* background-color: grey; */
@@ -61,6 +66,24 @@ code{
     color: rgb(109, 109, 109);
 }
  
+.line{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.line:before, .line:after {
+    content:"  ";
+    flex : 1 1;
+    border-bottom: 1px solid #797979;
+    margin: auto;
+}
+
+.line span{
+    padding: 3px;
+    margin: 3px;
+}
+
 table,thead, tbody, tr, th, td{
     border: none;
 }
@@ -72,7 +95,7 @@ tr:nth-child(odd){
     background-color:aliceblue;
     color:rgb(43, 42, 42)
 }
-input, textarea{
+input, textarea, select{
     width: 100%;
     margin: 1%;
     border:none;
@@ -83,9 +106,10 @@ input, textarea{
     padding: 8px;
     
 }
-.pad{
-    margin: 2%;
-    padding: 2%;
+form{
+    width: 100%
+    /* margin: 2%; */
+    /* padding: 2%; */
 }
 #genderM, #genderF, #genderO {
     border: 2px solid #999;
@@ -105,7 +129,15 @@ label{
     box-shadow :wheat 1px 0px 5px ;
   }
 
-
+#food-1:checked, #food-2:checked, #food-3:checked, #food-4:checked, #food-5:checked{
+    background-color: black;
+    border:none;
+    box-shadow :wheat 1px 0px 5px ;
+}
+#food-1:focus, #food-2:focus, #food-3:focus, #food-4:focus, #food-5:focus{
+      border:none;
+      box-shadow :none ;
+}
 footer{
     background-color: rgb(43, 42, 42);
     width: 100%;
