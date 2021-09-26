@@ -17,12 +17,14 @@ html{
     color:rgb(43, 43, 43);
 }
 body{
-    margin: 0px
+    margin: 0px;
+    background-color: wheat;
 }
 
 .jumbo{
     padding: 2%;
     margin: 1%;
+    width: 100%;
 }
 
 #workspace1{
@@ -36,10 +38,12 @@ body{
 .anSpace{
     background-color: rgb(43, 42, 42);
     color: rgb(228, 227, 227);
-    padding: 2%;
+    padding: 20px;
     margin: 1%;
     border-radius: 4px;
     align-items: center;
+    height: 90vh;
+    overflow: auto;
 }
 textarea:focus, .btn:focus, input:focus{
     outline: none;
@@ -68,10 +72,40 @@ tr:nth-child(odd){
     background-color:aliceblue;
     color:rgb(43, 42, 42)
 }
-input{
+input, textarea{
     width: 100%;
     margin: 1%;
+    border:none;
+    background-color:#555;
+    color:rgb(228, 227, 227);
+    border-radius : 5px;
+    height: 40px;
+    padding: 8px;
+    
 }
+.pad{
+    margin: 2%;
+    padding: 2%;
+}
+#genderM, #genderF, #genderO {
+    border: 2px solid #999;
+    transition: 0.2s all linear;
+    background-color: #555;
+}
+label{
+    margin-right: 30px;
+}
+.d-flex{
+    align-items: center;
+    
+    justify-content: center
+}
+#genderM:checked, #genderF:checked, #genderO:checked {
+    border: 6px solid black;
+    box-shadow :wheat 1px 0px 5px ;
+  }
+
+
 footer{
     background-color: rgb(43, 42, 42);
     width: 100%;
@@ -122,51 +156,4 @@ nav{
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: #555;
-  }
-
-  .calculator-body{
-      /* height: 600px; */
-      background-color:rgb(43, 42, 42);
-      padding: 3%;
-      margin: 2%;
-      box-shadow:rgb(43, 42, 42) 2px 5px 8px;
-      border-radius: 10px;
-      width: 450px;
-     
-      
-  }
-
-
-/* input output  */
-  .cal-io{
-    height: 50px;
-    background-color:rgb(250, 213, 144);
-    margin: 2%;
-    padding: 2%;
-    box-shadow:#585858 2px 5px 8px ;
-    border-radius: 6px;
-    border: none;
-  }
-
-  .btn{
-      height:60px;
-      width: 60px;
-      border-radius: 50%;
-      margin: 1%;
-  }
-  .cal-workspace{
-      padding: 3%;
-      margin: 1%;
-      
-
-  }
-  .cal-num{
-      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      font-size: 30px;
-      color:rgba(61, 61, 61, 0.884);
-  }
-  .cal-methods{
-      display: flex;
-      flex-direction: column;
-    
   }

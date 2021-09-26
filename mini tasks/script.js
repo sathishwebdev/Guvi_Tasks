@@ -123,6 +123,7 @@ function val(){
 }
 
 //answer 7
+//get from MDN Documentation
 var fullScrn = document.getElementById('fs_btn')
 var exitFullScrn = document.getElementById('efs_btn')
 function fullScreen(){
