@@ -32,7 +32,7 @@ for(let i = 0 ; i < numOfBtn ; i++){
 
    pageCon.append(pageBtn)
 }
-})
+}).catch(err => console.log(err))
 }
 
 // to generate pagination buttons
@@ -53,8 +53,7 @@ buttons(){
         prevBtn.style.display = "none"
     }
 
-
-    })
+    }).catch(err => console.log(err))
 }
 
 // to display table contents
@@ -80,7 +79,7 @@ data.then(data=>{
         tbody.append(row)
     }
     
-})
+}).catch(err => console.log(err))
 this.buttons()
 }
 
@@ -106,7 +105,7 @@ this.display()
 lastPage(){
     data.then(data=>{
         this.setPage((data.length/5)-1)
-    })
+    }).catch(err => console.log(err))
 }
 }
 
