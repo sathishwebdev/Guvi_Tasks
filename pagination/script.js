@@ -35,7 +35,7 @@ for(let i = 0 ; i < numOfBtn ; i++){
 }).catch(err => console.log(err))
 }
 
-// to generate pagination buttons
+// logic for pagination buttons
 buttons(){
     data.then(data=>{
         
@@ -59,7 +59,7 @@ buttons(){
 // to display table contents
 display(){
 data.then(data=>{
-    console.log(data.length)
+    // console.log(data.length)
    // navigation i.e showing current and total page number
     
     totalPage.innerHTML = data.length/5;
@@ -69,7 +69,7 @@ data.then(data=>{
     tbody.innerHTML = ''
     for(let i = this.firstIndex ; i < this.firstIndex+5; i++){
     
-        console.log(data[i].id)
+        // console.log(data[i].id)
         var row = tr()
         var rowData = [td(), td(), td()]
         rowData[0].innerHTML = data[i].id
