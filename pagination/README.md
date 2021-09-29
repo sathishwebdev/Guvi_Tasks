@@ -27,7 +27,6 @@ This Web page is dynamic, if the data source updated and number of results incre
 - The next, prev, first and last page buttons initiated in html page.
 
 ### In Script file...
-- Fetch the data and it returns the promised result of data from the API
 - Get the elements from the HTML by DOM and also create elements which to be append
 - Create a class for pagination
 - The number of buttons should defined at staring so, get the promised result and generate page buttons in constructor of the class so it can invoke when the class object created.
@@ -42,6 +41,10 @@ This Web page is dynamic, if the data source updated and number of results incre
 - Similarly, the prev button decreases the _variable_ with 5 for each clicks. So we can get the previous set of 5 datas can be get.
 - Method for page number buttons sets the _variable_ value arccording the page number. 
 - In page button generation, the loop should initate with value 0. The Page button logic method should have one argument that will be mutliplied with 5 so we can get the index value of first data according the page number / loop value and this value will assign to _variable_  . and then invoke the display method to refresh the page.
+
+- Create an object for the class.
+- Fetch the data from the API by XHR method. Invoke the class pagination.
+- invoke the class method that send the data to the class.
 
 ## What i didn't add?
 - In this code, we can make more dynamic by get the value from the user that represent the number of data to be shown per page.

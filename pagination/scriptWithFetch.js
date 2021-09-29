@@ -1,6 +1,7 @@
 // lets initiate variables
 
-
+// fetch data
+var data = fetch('https://gist.githubusercontent.com/rvsp/add40254aa126f045837fa5b51f47f1f/raw/4d724bfabf4cce7379a386e23bef6576ab99a2f9/pagination.json').then(response => response.json())
 //initiate Elements
 var tbody = document.getElementById('tbody')
 var tr = () => document.createElement('tr')
@@ -19,40 +20,49 @@ var pageCon = document.getElementById('pageBtns')
 class Pagination {
 constructor(){
     this.firstIndex = 0 
-    this.send()
+    
+// generate buttons
+data.then(data=>{
+var numOfBtn = data.length/5;
+for(let i = 0 ; i < numOfBtn ; i++){
+   var pageBtn = btn()
+   pageBtn.setAttribute('onclick',`page.setPage(${i})`)
+   pageBtn.setAttribute('class', 'btn btn-dark')
+   pageBtn.innerHTML = i+1
 
-
-
+   pageCon.append(pageBtn)
 }
-send(data){this.data = data}
+}).catch(err => console.log(err))
+}
+
 // logic for pagination buttons
 buttons(){
-   
+    data.then(data=>{
         
         // condition logic for next button
-        if(this.firstIndex < this.data.length-6   && this.firstIndex >= 0){
+        if(this.firstIndex < data.length-6   && this.firstIndex >= 0){
         nextBtn.style.display = "block"
     } else {
         nextBtn.style.display = "none"
     }
     // condition logic for prev btn
 
-    if(this.firstIndex > 0 && this.firstIndex < this.data.length){
+    if(this.firstIndex > 0 && this.firstIndex < data.length){
         prevBtn.style.display = "block"
     }else{
         prevBtn.style.display = "none"
     }
 
-    
+    }).catch(err => console.log(err))
 }
 
 // to display table contents
 display(){
-
+data.then(data=>{
     // console.log(data.length)
    // navigation i.e showing current and total page number
     
-    totalPage.innerHTML = this.data.length/5;
+    totalPage.innerHTML = data.length/5;
     currentPage.innerHTML = (this.firstIndex/5)+1
     
     //display table
@@ -62,13 +72,14 @@ display(){
         // console.log(data[i].id)
         var row = tr()
         var rowData = [td(), td(), td()]
-        rowData[0].innerHTML = this.data[i].id
-        rowData[1].innerHTML = this.data[i].name
-        rowData[2].innerHTML = this.data[i].email
+        rowData[0].innerHTML = data[i].id
+        rowData[1].innerHTML = data[i].name
+        rowData[2].innerHTML = data[i].email
         row.append(...rowData)
         tbody.append(row)
     }
-
+    
+}).catch(err => console.log(err))
 this.buttons()
 }
 
@@ -92,56 +103,20 @@ this.firstIndex = num *5
 this.display()
 }
 lastPage(){
-    
-        this.setPage((this.data.length/5)-1)
-   
+    data.then(data=>{
+        this.setPage((data.length/5)-1)
+    }).catch(err => console.log(err))
 }
 }
 
 
 
-
-
-
-// fetch data 
 var page = new Pagination()
-var xhr = new XMLHttpRequest();
-xhr.open("GET", "https://gist.githubusercontent.com/rvsp/add40254aa126f045837fa5b51f47f1f/raw/4d724bfabf4cce7379a386e23bef6576ab99a2f9/pagination.json",true);
-xhr.send();
+page.display()
 
-    xhr.onload = function(){
-        var a = JSON.parse(this.response);
-       
-        //invoke the data
+// button actions i.e click event actions
 
-        page.send(a)
-       
-        page.display()
-        // generate buttons
-
-var numOfBtn = a.length/5;
-for(let i = 0 ; i < numOfBtn ; i++){
-   var pageBtn = btn()
-   pageBtn.setAttribute('onclick',`page.setPage(${i})`)
-   pageBtn.setAttribute('class', 'btn btn-dark')
-   pageBtn.innerHTML = i+1
-
-   pageCon.append(pageBtn)
-}
-        // button actions i.e click event actions
-        
-        firstBtn.addEventListener('click', ()=>page.setPage(0))
-        lastBtn.addEventListener('click', ()=>page.lastPage())
-        nextBtn.addEventListener('click', ()=> page.next())
-        prevBtn.addEventListener('click', ()=> page.prev())
-
-}
-xhr.onerror = function(){
-   console.log( this.statusText);
-}
-
-
-
-
-
-
+firstBtn.addEventListener('click', ()=>page.setPage(0))
+lastBtn.addEventListener('click', ()=>page.lastPage())
+nextBtn.addEventListener('click', ()=> page.next())
+prevBtn.addEventListener('click', ()=> page.prev())
